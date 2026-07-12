@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Get the necessary components
-yum groupinstall lxqt -y
+yum group install lxqt -y
 yum install tigervnc-server dbus-x11 -y
 
 #Setup the necessary files

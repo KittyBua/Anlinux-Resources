@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Get the necessary components
-yum groupinstall xfce-desktop-environment -y
+yum group install xfce-desktop-environment -y
 yum install tigervnc-server dbus-x11 -y
 
 #Setup the necessary files

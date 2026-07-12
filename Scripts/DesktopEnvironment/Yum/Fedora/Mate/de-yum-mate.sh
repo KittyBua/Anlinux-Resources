@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Get the necessary components
-yum groupinstall mate-desktop -y
+yum group install mate-desktop -y
 yum install tigervnc-server dbus-x11 -y
 
 #Setup the necessary files
