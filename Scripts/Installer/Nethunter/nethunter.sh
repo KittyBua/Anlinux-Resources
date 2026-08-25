@@ -5,6 +5,7 @@ if [ -d "$folder" ]; then
 	echo "skipping downloading"
 fi
 tarball="nethunter-rootfs.tar.gz"
+rm -f $tarball
 if [ "$first" != 1 ];then
 	if [ ! -f $tarball ]; then
 		echo "Download Rootfs, this may take a while base on your internet speed."
