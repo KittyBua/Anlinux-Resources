@@ -25,11 +25,11 @@ echo "nameserver 8.8.4.4" >> $2/etc/resolv.conf
 rm $2/etc/apt/sources.list
 rm $2/etc/hostname
 echo "AnLinux-Debian" > $2/etc/hostname
-echo "deb http://deb.debian.org/debian bookworm main contrib non-free" >> $2/etc/apt/sources.list
-echo "deb http://security.debian.org/debian-security bookworm-security main contrib non-free" >> $2/etc/apt/sources.list
-echo "deb http://deb.debian.org/debian bookworm-updates main contrib non-free" >> $2/etc/apt/sources.list
-echo "deb http://deb.debian.org/debian bookworm-backports main contrib non-free" >> $2/etc/apt/sources.list
-echo "deb-src http://deb.debian.org/debian bookworm main contrib non-free" >> $2/etc/apt/sources.list
+echo "deb https://deb.debian.org/debian bookworm main contrib non-free" >> $2/etc/apt/sources.list
+echo "deb https://security.debian.org/debian-security bookworm-security main contrib non-free" >> $2/etc/apt/sources.list
+echo "deb https://deb.debian.org/debian bookworm-updates main contrib non-free" >> $2/etc/apt/sources.list
+echo "deb https://deb.debian.org/debian bookworm-backports main contrib non-free" >> $2/etc/apt/sources.list
+echo "deb-src https://deb.debian.org/debian bookworm main contrib non-free" >> $2/etc/apt/sources.list
 
 #setup custom packages
 chroot $2 apt update

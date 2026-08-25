@@ -29,19 +29,19 @@ rm $2/etc/apt/sources.list
 rm $2/etc/hostname
 echo "AnLinux-Ubuntu" > $2/etc/hostname
 if [ "$1" = "i386" ] || [ "$1" = "amd64" ] ; then
-  echo "deb http://archive.ubuntu.com/ubuntu noble main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://archive.ubuntu.com/ubuntu noble-backports main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://archive.ubuntu.com/ubuntu noble-proposed main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://archive.ubuntu.com/ubuntu noble-security main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://archive.ubuntu.com/ubuntu noble-updates main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb-src http://archive.ubuntu.com/ubuntu noble main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://archive.ubuntu.com/ubuntu noble main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://archive.ubuntu.com/ubuntu noble-backports main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://archive.ubuntu.com/ubuntu noble-proposed main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://archive.ubuntu.com/ubuntu noble-security main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://archive.ubuntu.com/ubuntu noble-updates main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb-src https://archive.ubuntu.com/ubuntu noble main restricted universe multiverse" >> $2/etc/apt/sources.list
 else  
-  echo "deb http://ports.ubuntu.com/ubuntu-ports noble main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://ports.ubuntu.com/ubuntu-ports noble-backports main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://ports.ubuntu.com/ubuntu-ports noble-proposed main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://ports.ubuntu.com/ubuntu-ports noble-security main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb http://ports.ubuntu.com/ubuntu-ports noble-updates main restricted universe multiverse" >> $2/etc/apt/sources.list
-  echo "deb-src http://ports.ubuntu.com/ubuntu-ports noble main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://ports.ubuntu.com/ubuntu-ports noble main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://ports.ubuntu.com/ubuntu-ports noble-backports main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://ports.ubuntu.com/ubuntu-ports noble-proposed main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://ports.ubuntu.com/ubuntu-ports noble-security main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb https://ports.ubuntu.com/ubuntu-ports noble-updates main restricted universe multiverse" >> $2/etc/apt/sources.list
+  echo "deb-src https://ports.ubuntu.com/ubuntu-ports noble main restricted universe multiverse" >> $2/etc/apt/sources.list
 fi
 
 #setup custom packages
