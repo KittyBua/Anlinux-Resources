@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/D
 wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Heavy/KDE/Apt/vncserver-stop --no-check-certificate -P /usr/local/bin/
 
 chmod +x ~/.vnc/xstartup
-chmod +x ~/.config/tigervnc/
+chmod +x ~/.config/tigervnc/xstartup
 chmod +x /usr/local/bin/vncserver-start
 chmod +x /usr/local/bin/vncserver-stop
 
